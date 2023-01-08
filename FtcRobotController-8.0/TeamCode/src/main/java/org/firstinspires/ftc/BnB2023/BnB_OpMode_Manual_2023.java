@@ -227,10 +227,12 @@ public class BnB_OpMode_Manual_2023 extends LinearOpMode {
 
     private void RingRollerDrive()
     {
-        if (gamepad1.left_bumper )
-            ViperDrive.setPower(-1.0);
-        else if(gamepad1.right_bumper)
-            ViperDrive.setPower(1.0);
+        if (gamepad1.left_bumper ) {
+                ViperDrive.setPower(-1.0);
+        }
+        else if(gamepad1.right_bumper) {
+                    ViperDrive.setPower(1.0);
+            }
         else
             ViperDrive.setPower(0.0);
     }
